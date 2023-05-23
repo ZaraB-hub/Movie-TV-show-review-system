@@ -1,4 +1,4 @@
-Movie Review System 
+<h1>Movie Review System </h1>
 
 This is a Movie Review System  project for the CEN 308 course! 
 
