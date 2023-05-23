@@ -9,3 +9,4 @@ Actor Endpoints:
 The Actor endpoint allows you to access actor-related information in the system. You can retrieve a list of actors, get details of a specific actor, add a new actor to the system, update actor information, or delete an actor entry. These endpoints enable efficient management of actor-related data.
 
 Link to deployed application: http://68.183.208.93/Movie-TV-show-review-system
+Alternative:https://whale-app-n3rc6.ondigitalocean.app/#home
