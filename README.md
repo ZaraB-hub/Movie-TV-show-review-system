@@ -8,4 +8,4 @@ The Movie endpoint allows you to interact with movie-related information in the 
 Actor Endpoints:
 The Actor endpoint allows you to access actor-related information in the system. You can retrieve a list of actors, get details of a specific actor, add a new actor to the system, update actor information, or delete an actor entry. These endpoints enable efficient management of actor-related data.
 
-Link to deploymed application: 
+Link to deployed application: 
