@@ -1,6 +1,3 @@
-$(function () {
-
-    console.log(searchQuery);
-    console.log("search.js");
-    $("#search_q").text(searchQuery);
+$(document).ready(function() {
+    $('#s1').text("hi");
 });

@@ -1,26 +1,12 @@
 <?php
 require_once "BaseDao.php";
 
-class ActorsDao extends BaseDao {
-
-    public function __construct(){
+class ActorsDao extends BaseDao
+{
+    public function __construct()
+    {
         parent::__construct("actors");
     }
-
-    // public function get_by_name($first, $last)
-    // {
-    //     $sql = "SELECT * FROM actors WHERE FirstName LIKE :first";
-    //     $params = ['first' => '%' . $first . '%'];
-    
-    //     if ($last) {
-    //         $sql .= " OR LastName LIKE :last";
-    //         $params['last'] = '%' . $last . '%';
-    //     }
-    
-    //     $stmt = $this->conn->prepare($sql);
-    //     $stmt->execute($params);
-    //     return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    // }
 
 
     public function get_by_name($name)
@@ -34,4 +20,3 @@ class ActorsDao extends BaseDao {
     
     
 }
-?>
