@@ -1,8 +1,6 @@
-<?
+<?php declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
-use PHPUnit\Framework\Assert;
-
-class ActorsDaoTest extends TestCase
+final class ActorsDaoTest extends TestCase
 {
     private $actorsDao;
 
@@ -23,9 +21,10 @@ class ActorsDaoTest extends TestCase
         ];
 
         $result = $this->actorsDao->get_by_name($name);
-
-        $this->assertEquals($expectedResult, $result);
+        Assert::assertEquals($expectedResult, $result);
+    
     }
+
 
     public function testGetByNameNoResults()
     {
@@ -34,6 +33,5 @@ class ActorsDaoTest extends TestCase
 
         $result = $this->actorsDao->get_by_name($name);
 
-        $this->assertEquals($expectedResult, $result);
+        Assert::assertEquals($expectedResult, $result);
     }
-}
