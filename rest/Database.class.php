@@ -20,8 +20,7 @@
                 $username = Config::DB_USERNAME();
                 $password = Config::DB_PASSWORD();
                 $schema = Config::DB_SCHEMA();
-                $port=Config::DB_PORT();
-                $this->conn = new PDO("mysql:host=$servername;port=$port;dbname=$schema", $username, $password);
+                $this->conn = new PDO("mysql:host=$servername;dbname=$schema", $username, $password);
                 $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {
                 echo "Connection failed: " . $e->getMessage();

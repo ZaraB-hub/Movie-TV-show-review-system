@@ -1,5 +1,5 @@
 
-Spapp...
+Spapp.
 ===============================
 **Spapp** is a simple jquery plugin that help to create single page application. The principle is quite simple.
 With this plugin you will load a main page wrapper that will load every other view (or if you prefer page) on url hash change.
