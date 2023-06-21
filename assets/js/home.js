@@ -1,7 +1,7 @@
 function getHome() {
     var routes = {
         // "From Your Watchlist": "rest/wm/list/14",
-        "Recently Added": "rest/movies/",
+        "Recently Added": "rest/movi/",
         "Comedies": "rest/movies/genre/comedy",
     };
 
