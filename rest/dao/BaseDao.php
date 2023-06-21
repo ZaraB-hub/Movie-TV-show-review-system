@@ -10,9 +10,14 @@
             public function __construct($table_name)
             {
                 try {
+                    
                     $this->table_name = $table_name;
-                    $this->conn = Database::getInstance()->getConnection();
-                    // set the PDO error mode to exception
+                    // $servername = Config::DB_HOST();
+                    // $username = Config::DB_USERNAME();
+                    // $password = Config::DB_PASSWORD();
+                    // $schema = Config::DB_SCHEMA();;
+                    // $this->conn = new PDO("mysql:host=$servername;dbname=$schema", $username, $password);
+                    $this->conn = new PDO("mysql:host=" . Config::DB_HOST() . ";port=" . Config::DB_PORT() . ";dbname=" . Config::DB_SCHEMA(), Config::DB_USERNAME(), Config::DB_PASSWORD());
                     $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 } catch (PDOException $e) {
                     echo "Connection failed: " . $e->getMessage();
