@@ -21,7 +21,7 @@ $.get("rest/watchlist/movie/" + user.UsersID, function (data) {
                     var $wc = $('<div>').addClass('d-flex pb-3 pt-3 ps-3').css('border-bottom', '1px solid black').css('cursor', 'pointer');
 
                     var $img = $('<img>');
-                    $img.attr('src', 'image.jpg');
+                    $img.attr('src', movieData.Image);
                     $img.css('width', '120px');
                     $img.css('height', '190px');
                     $img.css('object-fit', 'cover');

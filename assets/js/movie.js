@@ -36,11 +36,12 @@ $(function () {
                 WatchlistService.addMovie(localStorage.getItem("watchlist"), movieId);
             });
 
-            $.get("rest/movie/" + movieId + "/actors/", function (cast) {
+            $.get("rest/movie/1/actors/", function (cast) {
+                console.log(cast,"ga");
                 cast.forEach(function (member) {
                     console.log(member);
                     $.get("rest/actors/" + member.ActorID, function (data) {
-                        ;
+                        console.log(data,"Actror");
                         var castHtml = `<div class="one-cast d-flex align-items-start me-5 mb-5">
                                             <img src="${data.Image}" style="width: 150px; height: 310px; object-fit: cover;" alt="">
                                             <a href="#actor" data-id="${data.ActorsID}" class="person-link">

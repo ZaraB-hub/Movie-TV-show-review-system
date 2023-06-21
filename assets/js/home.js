@@ -1,6 +1,6 @@
 function getHome() {
     var routes = {
-        "From Your Watchlist": "rest/wm/list/14",
+        // "From Your Watchlist": "rest/wm/list/14",
         "Family Film Night": "rest/movies/genre/family",
         "Recently Added": "rest/movies/",
         "Comedies": "rest/movies/genre/comedy",
